@@ -72,3 +72,7 @@ jobs:
     - run: |
        echo "java version"
        java -version
+       
+        uses: actions/setup-java@v1
+       with:
+          java-version: 15
