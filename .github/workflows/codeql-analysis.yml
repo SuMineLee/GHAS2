@@ -76,3 +76,6 @@ jobs:
         uses: actions/setup-java@v1
        with:
           java-version: 15
+          
+    - if: matrix.language == 'java'  
+      uses: github/codeql-action/autobuild@v1
